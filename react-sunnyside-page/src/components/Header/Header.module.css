@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem 1.5rem 1rem 1.5rem;
-    background-color: #3cbefe;
+    background-color: hsl(199,87%,62%);
 }
 
 .hideMenu {
@@ -130,5 +130,9 @@
 
     .ul {
         gap: 2.93rem;
+    }
+
+    .logo {
+        min-width: 10.62rem;
     }
 }

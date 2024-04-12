@@ -14,7 +14,7 @@ const Header = () => {
     return (
             <header className={styles.header}>
                 <div>
-                    <img src={Logo} alt="Sunnyside logo" />
+                    <img className={styles.logo} src={Logo} alt="Sunnyside logo" />
                 </div>
                 <div className={styles.navBarWrapper}>
                     <div className={styles.navBarRelative}>
