@@ -1,0 +1,88 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1.5rem 0 1.5rem;
+    background-color: #3cbefe;
+}
+
+.hideMenu {
+    display: none;
+}
+
+.headerWrapper {
+    background: url(../../assets//mobile/image-header.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.openMenu {
+    background: none;
+    border: none;
+}
+
+.navBar {
+    position: absolute;
+    background: #fffcf8;
+    padding: 2.2rem 0;
+    top: 67px;
+    left: -212px;
+    min-width: 20.56rem;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 24px solid #fffcf8;
+    top: -24px;
+    right: 0;
+}
+
+.navBarRelative {
+    position: relative;
+}
+
+.navBarWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.aTag {
+    color: #808397;
+    font-weight: 600;
+    letter-spacing: -0.143px;
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+}
+
+.contact {
+    color: #24303E;
+    font-size: .93rem;
+    font-weight: 700;
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    letter-spacing: -0.107px;
+    line-height: 1.5rem;
+}
+
+.contactLi {
+    text-align: center;
+    padding: 1rem 0;
+    background: #FBD600;
+    border-radius: 28px;
+    min-width: 8.75rem;
+}
