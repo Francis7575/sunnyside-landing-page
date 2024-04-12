@@ -90,7 +90,7 @@
 }
 
 @media (min-width: 46em) {
-    .hideMenu {
+    .hideMenu { 
         display: block;
     }
 
