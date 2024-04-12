@@ -5,16 +5,18 @@ const Testimonials = () => {
     return (
         <section className={styles.section}>
             <h4 className={styles.h4}>CLIENT TESTIMONIALS</h4>
-            {testimonials.map((section, index) => (
-                <div key={index} className={styles.container}>
+            <div className={styles.containerWrap}>
+                {testimonials.map((section, index) => (
+                    <div key={index} className={styles.container}>
                         <img className={styles.image} src={section.image} alt="Profile picture" />
                         <p className={styles.paragraph}>{section.paragraph}</p>
-                        <div>
+                        <div className={styles.personContainer}>
                             <p className={styles.name}>{section.name}</p>
                             <p className={styles.occupation}>{section.occupation}</p>
                         </div>
-                </div>
-            ))}
+                    </div>
+                ))}
+            </div>
         </section>
     )
 }

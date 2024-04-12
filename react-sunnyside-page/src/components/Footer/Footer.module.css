@@ -29,3 +29,9 @@ footer {
     justify-content: center;
     gap: 1.5rem;
 }
+
+@media (min-width: 46em) {
+    footer {
+        padding: 4.5rem 0;
+    }
+}

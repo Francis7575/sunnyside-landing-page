@@ -1,21 +1,13 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 1.5rem 0 1.5rem;
+    align-items: center;
+    padding: 2rem 1.5rem 1rem 1.5rem;
     background-color: #3cbefe;
 }
 
 .hideMenu {
     display: none;
-}
-
-.headerWrapper {
-    background: url(../../assets//mobile/image-header.jpg);
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 .openMenu {
@@ -70,7 +62,6 @@
 }
 
 .contact {
-    color: #24303E;
     font-size: .93rem;
     font-weight: 700;
     font-family: "Fraunces", serif;
@@ -80,9 +71,60 @@
 }
 
 .contactLi {
+    color: #24303E;
     text-align: center;
     padding: 1rem 0;
     background: #FBD600;
     border-radius: 28px;
     min-width: 8.75rem;
+}
+
+@media (min-width: 46em) {
+    .hideMenu {
+        display: block;
+    }
+
+    .navBar {
+        position: static;
+        background: none;
+        padding: 0;
+    }
+
+    .triangle {
+        display: none;
+    }
+
+    .menuButton {
+        display: none;
+    }
+
+    .ul {
+        flex-direction: row;
+    }
+
+    .aTag {
+        color: #FFF;
+        font-size: 1.12rem;
+        letter-spacing: -0.129px;
+    }
+
+    .contactLi {
+        background: #FFF;
+        cursor: pointer;
+    }
+
+    .contactLi:hover {
+        background: rgba(255, 255, 255, .25);
+        color: #fff;
+    }
+}
+
+@media (min-width: 64em) {
+    .header {
+        padding: 2.18rem 3.18rem 0 2.5rem;
+    }
+
+    .ul {
+        gap: 2.93rem;
+    }
 }

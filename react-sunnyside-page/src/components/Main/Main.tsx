@@ -3,6 +3,7 @@ import iconArrowDown from '../../assets/icon-arrow-down.svg'
 import GridItems from '../GridItems/GridItems'
 import Testimonials from '../Testimonials/Testimonials'
 import ImagesSection from '../ImagesSection/ImagesSection'
+
 const MainComponent = () => {
     return (
         <main>

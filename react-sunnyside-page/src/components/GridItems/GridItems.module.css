@@ -71,13 +71,17 @@
 .linkContainer::after {
     content: '';
     position: absolute;
-    bottom: 1px;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 10px;
     border-radius: 28px;
     background-color: #FAD400;
     opacity: 0.25;
+}
+
+.linkContainer:hover::after {
+    opacity: 1;
 }
 
 .figureContainer {
@@ -94,14 +98,14 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    margin-bottom: 3.68rem; 
+    margin-bottom: 3.68rem;
 }
 
 .title {
     color: #24554A;
     font-weight: 900;
     letter-spacing: -0.2px;
-    font-size: 1.75rem  ;
+    font-size: 1.75rem;
 }
 
 .description {
@@ -111,4 +115,86 @@
     line-height: 1.68rem;
     font-size: 1rem;
     padding: 0 1.5rem;
+}
+
+.desktopImage,
+.figureDesktopImage {
+    display: none;
+}
+
+@media (min-width: 46em) {
+    .section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .firstContainer,
+    .secondContainer {
+        text-align: left;
+    }
+
+    .desktopImage,
+    .figureDesktopImage {
+        display: block;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .mobileImage,
+    .figureMobileImage {
+        display: none;
+    }
+
+    .transformImgContainer {
+        order: 2;
+    }
+
+    .firstContainer {
+        order: 1;
+    }
+
+    .figcaption {
+        margin: 0;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 64em) {
+
+    .firstContainer,
+    .secondContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+    }
+
+    .figcaption {
+        margin-bottom: 1.5rem;
+        gap: 1.68rem;
+    }
+
+    .description {
+        max-width: 25.18rem;
+    }
+}
+
+@media (min-width: 90em) {
+
+    .firstContainer,
+    .secondContainer {
+        padding: 10rem 6.62rem 10rem 10.31rem;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .paragraph {
+        margin-bottom: 2.5rem;
+    }
+
+    .figcaption {
+        margin-bottom: 3.68rem;
+    }
 }

@@ -7,10 +7,12 @@ const GridComponent = () => {
             {gridSection.map((section, index) => (
                 <div key={index}
                     className={`${styles.container} ${section.className && styles[section.className]}`}>
-                    {section.image && (
-                        <img className={styles.image} src={section.image} alt="" />
+                    {section.imageMobile && (
+                        <img className={styles.mobileImage} src={section.imageMobile} alt="" />
                     )}
-
+                    {section.imageDesktop && (
+                        <img className={styles.desktopImage} src={section.imageDesktop} alt="" />
+                    )}
                     {section.wrapContent && (
                         <div className={styles.content}>
                             <h2 className={styles.heading}>{section.heading}</h2>
@@ -21,9 +23,10 @@ const GridComponent = () => {
                         </div>
                     )}
 
-                    {section.figure && (
+                    {section.figureMobile && (
                         <figure className={styles.figureContainer}>
-                            <img src={section.figure} alt="" />
+                            <img className={styles.figureMobileImage} src={section.figureMobile} alt="" />
+                            <img className={styles.figureDesktopImage} src={section.figureDesktop} alt="" />
                             <figcaption className={styles.figcaption}>
                                 <h3 className={styles.title}>{section.title}</h3>
                                 <p className={styles.description}>{section.description}</p>

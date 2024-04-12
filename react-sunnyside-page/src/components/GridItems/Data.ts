@@ -1,16 +1,22 @@
-import transformImage from '../../assets/mobile/image-transform.jpg'
-import standOutImage from '../../assets/mobile/image-stand-out.jpg'
-import graphicDesign from '../../assets/mobile/image-graphic-design.jpg'
-import photography from '../../assets/mobile/image-photography.jpg'
+import transformImageMobile from '../../assets/mobile/image-transform.jpg'
+import transformImageDesktop from '../../assets/desktop/image-transform.jpg'
+import standOutImageMobile from '../../assets/mobile/image-stand-out.jpg'
+import standOutImageDesktop from '../../assets/desktop/image-stand-out.jpg'
+import graphicDesignMobile from '../../assets/mobile/image-graphic-design.jpg'
+import graphicDesignDesktop from '../../assets/desktop/image-graphic-design.jpg'
+import photographyMobile from '../../assets/mobile/image-photography.jpg'
+import photographyDesktop from '../../assets/desktop/image-photography.jpg'
 
 type GridSectionProps = {
     heading?: string;
     paragraph?: string;
     link?: string;
-    image?: string;
+    imageMobile?: string;
+    imageDesktop?: string,
     title?: string;
     description?: string,
-    figure?: string,
+    figureMobile?: string,
+    figureDesktop?: string,
     className?: string,
     wrapContent?: boolean
 };
@@ -24,11 +30,13 @@ const gridSection: GridSectionProps[] = [
         wrapContent: true
     },
     {
-        image: transformImage,
+        imageMobile: transformImageMobile,
+        imageDesktop: transformImageDesktop,
         className: 'transformImgContainer'
     },
     {
-        image: standOutImage,
+        imageMobile: standOutImageMobile,
+        imageDesktop: standOutImageDesktop,
         className: 'standOutImgContainer'
     },
     {
@@ -39,17 +47,19 @@ const gridSection: GridSectionProps[] = [
         wrapContent: true
     },
     {
-        figure: graphicDesign,
+        figureMobile: graphicDesignMobile,
+        figureDesktop: graphicDesignDesktop,
         title: 'Graphic Design',
         description: "Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.",
         className: 'graphicImgContainer'
     },
     {
-        figure: photography,
+        figureMobile: photographyMobile,
+        figureDesktop: photographyDesktop,
         title: 'Photography',
         description: "Increase your credibility by getting the most stunning, high-quality photos that improve your business image.",
         className: 'photographyImgContainer'
     }
 ];
 
-export { gridSection, transformImage, standOutImage, graphicDesign, photography };
+export { gridSection };
