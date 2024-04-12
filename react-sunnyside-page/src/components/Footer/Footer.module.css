@@ -1,0 +1,37 @@
+footer {
+    background: #90D4C6;
+    padding: 4rem 0 5rem 0;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.ul {
+    display: flex;
+    justify-content: center;
+    gap: 3.56rem;
+    margin-bottom: 5.5rem;
+}
+
+.link {
+    color: #458D7E;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: -0.129px;
+    font-size: 1.12rem;
+}
+
+.mediaContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+@media (min-width: 46em) {
+    footer {
+        padding: 4.5rem 0;
+    }
+}
