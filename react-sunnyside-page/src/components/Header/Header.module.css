@@ -62,6 +62,7 @@
 }
 
 .contact {
+    color: #24303E;
     font-size: .93rem;
     font-weight: 700;
     font-family: "Fraunces", serif;
@@ -70,13 +71,22 @@
     line-height: 1.5rem;
 }
 
+.contactLi:hover .contact {
+    color: #fff;
+}
+
 .contactLi {
-    color: #24303E;
     text-align: center;
     padding: 1rem 0;
     background: #FBD600;
     border-radius: 28px;
     min-width: 8.75rem;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.contactLi:hover {
+    background: rgba(255, 255, 255, .25);
 }
 
 @media (min-width: 46em) {
@@ -110,12 +120,6 @@
 
     .contactLi {
         background: #FFF;
-        cursor: pointer;
-    }
-
-    .contactLi:hover {
-        background: rgba(255, 255, 255, .25);
-        color: #fff;
     }
 }
 

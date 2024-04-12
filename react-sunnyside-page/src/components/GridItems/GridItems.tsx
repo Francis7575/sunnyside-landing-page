@@ -13,12 +13,17 @@ const GridComponent = () => {
                     {section.imageDesktop && (
                         <img className={styles.desktopImage} src={section.imageDesktop} alt="" />
                     )}
+
                     {section.wrapContent && (
                         <div className={styles.content}>
                             <h2 className={styles.heading}>{section.heading}</h2>
                             <p className={styles.paragraph}>{section.paragraph}</p>
-                            <div className={styles.linkContainer}>
-                                <a className={styles.link} href="#">{section.link}</a>
+                            <div
+                                className={`${styles.linkContainer} 
+                                ${section.linkContainerClassName && styles[section.linkContainerClassName]}`}>
+                                <a className={styles.link} href="#">
+                                    {section.link}
+                                </a>
                             </div>
                         </div>
                     )}

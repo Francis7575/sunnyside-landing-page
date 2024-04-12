@@ -24,10 +24,19 @@ footer {
     font-size: 1.12rem;
 }
 
+.link:hover {
+    color: #fff;
+}
+
 .mediaContainer {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+}
+
+.mediaContainer img:hover {
+    filter: brightness(0) invert(1);
+    cursor: pointer;
 }
 
 @media (min-width: 46em) {

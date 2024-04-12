@@ -18,7 +18,8 @@ type GridSectionProps = {
     figureMobile?: string,
     figureDesktop?: string,
     className?: string,
-    wrapContent?: boolean
+    wrapContent?: boolean,
+    linkContainerClassName?: string;
 };
 
 const gridSection: GridSectionProps[] = [
@@ -26,6 +27,7 @@ const gridSection: GridSectionProps[] = [
         heading: 'Transform your brand',
         paragraph: 'We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.',
         link: 'Learn more',
+        linkContainerClassName: 'firstLink',
         className: 'firstContainer',
         wrapContent: true
     },
@@ -43,6 +45,7 @@ const gridSection: GridSectionProps[] = [
         heading: 'Stand out to the right audience',
         paragraph: "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.",
         link: 'Learn more',
+        linkContainerClassName: 'secondLink',
         className: 'secondContainer',
         wrapContent: true
     },
